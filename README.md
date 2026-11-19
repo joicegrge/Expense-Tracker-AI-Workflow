@@ -48,6 +48,32 @@ A Python command-line application for recording and reviewing personal expenses.
 
 The `data/` directory is created when the application first needs its default store. The local expense file is ignored by Git.
 
+
+## AI-Assisted Development Workflow
+
+This project was developed using Codex with a structured AI-assisted workflow. The repository includes the following supporting files for review:
+
+### 1. Project Rules and Instructions
+- `AGENTS.md` – Defines the technology stack, project structure, coding standards, development commands, restrictions (Never rules), and Definition of Done.
+
+### 2. Agent Skills
+Two reusable skills were created to guide AI-assisted development:
+- `.agents/skills/add-feature/SKILL.md` – Defines a structured workflow for planning, approving, implementing, testing, and reviewing new features.
+- `.agents/skills/test-generator/SKILL.md` – Guides the AI in identifying missing test scenarios, proposing test cases, obtaining approval, and implementing tests.
+
+### 3. Automated Hook
+- `.githooks/pre-commit` – Automatically runs the unit test suite before a Git commit. It prevents commits when tests fail.
+- To activate the hook after cloning the repository, run:
+  `git config core.hooksPath .githooks`
+
+### 4. AI Usage Log
+- `AI_USAGE_LOG.md` – Documents at least five AI-assisted development interactions, including the prompts, AI-generated output, identified issues or missing elements, and the changes made after review.
+
+### 5. Development Reflection
+- `REFLECTION.md` – Describes what worked well, challenges encountered, the most impactful rule or skill, and what could be improved in future development.
+
+**Review Guide:** Review `AGENTS.md`, the two skill files, and `.githooks/pre-commit` to understand the workflow. Then refer to `AI_USAGE_LOG.md` and `REFLECTION.md` for examples of how the workflow was applied and evaluated.
+
 ## Setup
 
 In Windows PowerShell, clone the repository and enter the cloned directory. Replace the placeholders with your repository URL and the folder created by `git clone`:
