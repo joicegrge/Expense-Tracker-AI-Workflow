@@ -122,3 +122,10 @@ Ruff must be installed in the Python environment selected by `py`.
 - Data is stored in one local JSON file; the application does not provide cloud synchronization or multi-device sharing.
 - Amounts are handled as INR only; multiple currencies are not supported.
 - The interface is an interactive numbered menu and does not provide command-line subcommands or arguments.
+
+### Enable the Git Pre-Commit Hook
+
+Run this command from the project root:
+
+```bash
+git config core.hooksPath .githooks
