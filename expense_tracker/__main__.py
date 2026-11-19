@@ -1,9 +1,6 @@
-"""Module entry point for the Expense Tracker."""
+"""Launch the Expense Tracker command-line interface."""
 
-
-def main() -> None:
-    """Provide the entry point for the future command-line interface."""
-
+from .main import main
 
 if __name__ == "__main__":
     main()
